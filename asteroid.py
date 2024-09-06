@@ -1,4 +1,3 @@
-from pygame import Vector2
 from circleshape import *
 from constants import *
 import random
@@ -26,7 +25,6 @@ class Asteroid(CircleShape):
             # Spawn new asteroids
             asteroid_1 = Asteroid(self.position.x, self.position.y, new_radius)
             asteroid_2 = Asteroid(self.position.x, self.position.y, new_radius)
-            
 
             # Assign random trajectory angles to new asteroids
             asteroid_1.velocity = new_velocity
